@@ -1,0 +1,135 @@
+#+Title: Investigation on 2015 Alberta/SK Drought 
+#+Author: Zhenhua Li
+#+Email: zhenhua.li@usask.ca
+
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:t
+#+OPTIONS: reveal_mathjax:t reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_width:1200 reveal_height:800
+#+OPTIONS: reveal_single_file:t
+#+OPTIONS: toc:1
+#+REVEAL_MARGIN: 0.1
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: cube
+#+REVEAL_THEME: serif
+#+REVEAL_HLEVEL: 2
+#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="Org-Reveal Introduction.">
+#+REVEAL_POSTAMBLE: <p> Created by yjwen. </p>
+#+REVEAL_PLUGINS: (highlight markdown notes)
+#+REVEAL_EXTRA_CSS: ./local.css
+
+* Precipitation Anomaly and Circulation Anomaly
+
+  - Both May and June 2015 see significantly less precipitation in the
+    two provinces
+  - For the last 6 months there is an anomalous upper-level ridge in
+    the Alaska region.
+  - The precipitation anomaly is in the east flank of that anomalous
+    ridge
+** Precipitation Anomaly 2010-2015
+
+   [[file:./images/iprca_-110--100E_52-65N_n_10p_2010-2015.png]]
+
+** GPH Anomaly and Precipitation Anomaly
+
+  [[file:./images/hgta_preca.png]]
+* Sea Surface Temperature Anomaly
+  - 2014 witnessed the warming of eastern tropical Pacific as an El
+    Nino developed in the early 2015
+
+ - In the meantime a warm SST anomaly has been sustained in the
+   northeastern Pacific since the beginning of 2014
+ 
+* Sea Surface Temperature Anomaly
+
+** SST Anomaly 10/2014
+  [[file:./images/ersstv4_1981_2010_anom_01930.jpeg]]
+  
+** SST Anomaly 11/2014
+  [[file:./images/ersstv4_1981_2010_anom_01931.jpeg]]
+  
+** SST Anomaly 12/2014
+  [[file:./images/ersstv4_1981_2010_anom_01932.jpeg]]
+  
+** SST Anomaly 01/2015
+  [[file:./images/ersstv4_1981_2010_anom_01933.jpeg]]
+** SST Anomaly 02/2015
+  [[file:./images/ersstv4_1981_2010_anom_01934.jpeg]]
+** SST Anomaly 03/2015
+  [[file:./images/ersstv4_1981_2010_anom_01935.jpeg]]
+** SST Anomaly 04/2015
+  [[file:./images/ersstv4_1981_2010_anom_01936.jpeg]]
+** SST Anomaly 05/2015
+  [[file:./images/ersstv4_1981_2010_anom_01937.jpeg]]
+
+
+
+
+* SST Variations
+  - The leading 3 EOFs of Pacific Basin (30S-65N,120E-105W) after
+    detrending and removal of annual cycle correspond to ENSO, PDO,
+    and North Pacific Mode.
+  - Both PC 1 (ENSO) and 3 (North Pacific Mode) turn positive in
+    late 2013. PC 3 is exceptionally strong in 2014 and 2015.
+      
+** Pacific SST EOF 
+#+CAPTION: SST EOFs
+#+ATTR_LATEX: :float multicolumn
+
+| EOF1 (ENSO)                                  | EOF2 (PDO)                                   | EOF3 (North Pacific Mode)                    |
+|----------------------------------------------+----------------------------------------------+----------------------------------------------|
+| [[file:./images/geof20150810_2050_3434_1_1.png]] | [[file:./images/geof20150810_2050_3434_2_1.png]] | [[file:./images/geof20150810_2050_3434_3_1.png]] |
+|                                              |                                              |                                              |
+|----------------------------------------------+----------------------------------------------+----------------------------------------------|
+
+
+
+** SST EOF PC time series
+#   :PROPERTIES:
+#   :reveal_background: #1c1e20
+#   :END:      
+   [[file:./images/pcs_eofs_Pacifc_sst1.png]]
+
+
+* PC1's relation with precipitation and GPH
+
+** PC1 (ENSO) regression with precipitation 
+#+ATTR_HTML: :width 50% :height 50%
+  [[./images/pc1_preci_lag0.png]] 
+
+** PC1 (ENSO) regression with GPH
+#+ATTR_HTML: :width 50% :height 50%
+  [[file:./images/pc1_hgt_reg_jun.png]]
+
+* PC3's relation with precipitation and GPH
+
+** PC3 regression with precipitation
+#+ATTR_HTML: :width 50% :height 50%
+  [[file:./images/PC3_prec_reg_jun.png]]
+** PC3 regression with GPH (May)
+#+ATTR_HTML: :width 50% :height 50%
+ [[file:./images/pc3_hgt_reg_may.png]]
+** PC3 regression with GPH (Jun)
+#+ATTR_HTML: :width 50% :height 50%
+ [[file:./images/pc3_hgt_reg_jun.png]] 
+
+* SK/AL Precipitation's correlation with GPH
+#+ATTR_HTML: :width 50% :height 50%
+ [[file:./images/hgt_skrain_corr.png]]
+
+* SK/AL precipitation's correlation with SST
+#+ATTR_HTML: :width 50% :height 50%
+ [[file:./images/corr_rainsk_sst_may.png]] 
+
+* Summary
+ - Both ENSO or PC3 are related to the anomalous ridge over Alaska,
+ - Both have connection to the precipitation anomaly, though not as
+   strong as GPH anomaly.
+ - Northeast Pacific SST is anti-correlated with the May-June precipitation in
+   SK/Alberta.
+ - GPH anomaly near BC and Alaska is anti-correlated with the May-June
+   precipitation in SK/Alberta.
+ 
+
+
+
